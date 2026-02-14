@@ -30,6 +30,31 @@
 //--//-->   ABOUT
 ======================================*/
 
+	.one-third {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 280px;
+  height: 280px;
+
+  border-radius: 50%;
+
+  background-image: url("images/me.jpg");
+  background-size: cover;
+
+  /* controls crop position */
+  background-position: center 20%;
+
+  background-repeat: no-repeat;
+
+  /* optional styling */
+  border: 4px solid #ffc107;
+  box-shadow: 0 0 25px rgba(255, 193, 7, 0.5);
+}
+
 #V-sizeC{
 
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -149,17 +174,10 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img"
-     style="
-       background-image:url(images/me.jpg);
-       width:200px;
-       height:200px;
-       border-radius:50%;
-       background-size:cover;
-       background-position:center;
-       background-repeat:no-repeat;
-     ">
+  <div class="one-third js-fullheight order-md-last">
+    <div class="profile-img"></div>
 </div>
+
 
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
